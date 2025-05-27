@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eco Tracker - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r border-gray-200 shadow-sm">
+      <div class="h-16 flex items-center justify-center border-b">
+        <h1 class="text-xl font-bold text-green-700">Eco Tracker</h1>
+      </div>
+      <nav class="flex flex-col p-4 space-y-2">
+        <a href="#" class="px-4 py-2 rounded-md hover:bg-green-100 text-gray-700 hover:text-green-700">Dashboard</a>
+        <a href="#" class="px-4 py-2 rounded-md hover:bg-green-100 text-gray-700 hover:text-green-700">My Reports</a>
+        <a href="#" class="px-4 py-2 rounded-md hover:bg-green-100 text-gray-700 hover:text-green-700">Submit New Report</a>
+        <a href="#" class="px-4 py-2 rounded-md hover:bg-green-100 text-gray-700 hover:text-green-700">Badges</a>
+        <a href="#" class="px-4 py-2 rounded-md hover:bg-green-100 text-gray-700 hover:text-green-700">Profile</a>
+        <a href="#" class="mt-auto px-4 py-2 rounded-md bg-red-100 hover:bg-red-200 text-red-700">Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 overflow-y-auto">
+      <h2 class="text-2xl font-semibold mb-4">Welcome, Saleena! 👋</h2>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-gray-100 p-4 rounded-lg shadow text-center">
+          <p class="text-sm text-gray-500">Total Reports</p>
+          <p class="text-3xl font-bold text-green-600">12</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow text-center">
+          <p class="text-sm text-gray-500">Your Badge</p>
+          <p class="text-xl text-yellow-500 font-semibold">Gold Reporter 🥇</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow text-center">
+          <p class="text-sm text-gray-500">Pending Reviews</p>
+          <p class="text-3xl font-bold text-red-500">2</p>
+        </div>
+      </div>
+
+      <!-- Report History -->
+      <div class="bg-white border rounded-lg shadow p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-semibold">Recent Reports</h3>
+          <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 text-sm">+ New Report</button>
+        </div>
+
+        <ul class="divide-y divide-gray-200">
+          <li class="py-2 flex justify-between">
+            <span>🚨 Streetlight broken in Sector B</span>
+            <span class="text-sm text-gray-500">2 days ago</span>
+          </li>
+          <li class="py-2 flex justify-between">
+            <span>🗑️ Garbage overflow near park</span>
+            <span class="text-sm text-gray-500">5 days ago</span>
+          </li>
+          <li class="py-2 flex justify-between">
+            <span>🌊 Illegal dumping near river</span>
+            <span class="text-sm text-gray-500">1 week ago</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
